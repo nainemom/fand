@@ -1,12 +1,12 @@
 #!/usr/bin/env node
 
 const path = require('path')
-const pkg = require('./package.json')
-const output = require('./lib/output.js')
-const wordp = require('./lib/wordp.js')
-const argv = require('./lib/argv.js')
+const pkg = require(path.resolve(__dirname, './package.json'))
+const output = require(path.resolve(__dirname, './lib/output.js'))
+const wordp = require(path.resolve(__dirname, './lib/wordp.js'))
+const argv = require(path.resolve(__dirname, './lib/argv.js'))
 const fs = require('fs')
-const dic = fs.readFileSync('./dic', 'utf8')
+const dic = fs.readFileSync(path.resolve(__dirname, './dic'), 'utf8')
 const word = argv.get('--word') || argv.get('-w') || argv.param(0)
 
 if (argv.is('-v') || argv.is('--version')) {
