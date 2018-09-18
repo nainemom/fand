@@ -1,7 +1,7 @@
 {
   "name": "fand",
   "version": "0.0.1",
-  "description": "",
+  "description": "Simple cli app to search easily in persian words.",
   "main": "index.js",
   "bin": "index.js",
   "scripts": {
