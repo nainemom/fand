@@ -3,7 +3,7 @@
   "version": "0.0.3",
   "description": "Simple cli app to search easily in persian words.",
   "main": "index.js",
-  "bin": "index.js",
+  "bin": "bin.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
